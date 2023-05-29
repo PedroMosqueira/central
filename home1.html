@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos </title>
+</head>
+<style>
+    *{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+   
+    body{
+        background-color: black;
+        color:white;
+    }
+
+    h1{
+        text-align: center;
+        margin-top: 5px;
+
+    }
+
+    
+    iframe{
+        width: 320px;
+        height: 550px;
+        background-color: white;
+        text-align: center;
+
+    }
+    main{
+        margin: auto;
+        text-align: center;
+       
+       
+    }
+    iframe{
+        background-color: white;
+    }
+    
+    
+    
+
+    
+    p{
+        
+        padding: 5px;
+        margin: 5px;
+    }
+
+    a{
+        text-decoration: none;
+        font-weight: bolder;
+        color: black;
+        background-color: white;
+        padding: 2px;
+
+
+    }
+
+</style>
+<body>    
+    
+    <h1>Projetos</h1>
+   
+    <div>
+        <div id="opc">
+            <p>
+                <label for="site">Escolha um projeto:</label>
+                   <select name="site" id="isite" class="site"  >
+                    <option value="1" class="site" > Exemplo de Ancora</option>
+                    <option value="2"  class="site">História do mascote Android</option>
+                    <option value="3" class="site" >Cordel Moderno</option>
+                    <option value="4"  class="site">Exemplo de Media Query</option>
+                    <option value="5"   class="site">Exemplo de Menu responsivo</option>
+                    <option value="6"  class="site">Tela de login responsiva</option>
+                   </select>
+                   <a  id ='link' href="" target="_blank">Acessar</a>
+            </p>
+            <p>
+                <label for="select2">Formato:</label>
+                <select name="select2" id="select2">
+                    <option value="1">Smartfone</option>
+                    <option value="2" >Desktop</option>
+        
+                </select>
+            </p>
+    </div>
+        
+            <main  id="divf">
+            
+                <iframe  id='iframe' src="" frameborder="0"></iframe>
+            </main>
+        
+    </div>
+
+   
+
+
+</body>
+</html>
+<script>
+   	var select = document.getElementById('isite')
+    select.addEventListener("change", function teste(){
+    var valor=this.value
+    
+
+    switch(valor){
+
+        
+
+        case '2':
+            document.getElementById('iframe').src='https://pedromosqueira.github.io/Curso-html-e-css/'
+            document.getElementById('link').href='https://pedromosqueira.github.io/Curso-html-e-css/'
+            break;
+        
+        case '3':
+        document.getElementById('iframe').src='https://pedromosqueira.github.io/desafio.cordel/'
+        document.getElementById('link').href='https://pedromosqueira.github.io/desafio.cordel/'
+        break;
+
+        case '4':
+        document.getElementById('iframe').src='https://pedromosqueira.github.io/Media-Query/#'
+        document.getElementById('link').href='https://pedromosqueira.github.io/Media-Query/#'
+        break;
+
+        case '5':
+        document.getElementById('iframe').src='https://pedromosqueira.github.io/Media-Query2/#'    
+        document.getElementById('link').href='https://pedromosqueira.github.io/Media-Query2/#'
+        break;    
+
+        case '6':
+        document.getElementById('iframe').src='https://pedromosqueira.github.io/login-form/'    
+        document.getElementById('link').href='https://pedromosqueira.github.io/login-form/'
+        break
+        
+    }
+   
+    
+   })
+
+   var select2= document.getElementById('select2')
+    select2.addEventListener("change", function teste(){
+    var valor2=this.value
+    
+    
+
+    
+        switch(valor2){
+            case '1':
+                document.getElementById('iframe').style.width='320px'
+                document.getElementById('iframe').style.height='550px'
+                break;
+            case '2':
+                document.getElementById('iframe').style.width='70vw'
+                document.getElementById('iframe').style.height='35vw'
+                break;
+
+
+        }
+
+    
+
+
+
+
+
+    })
+   
+   
+
+   
+   
+    
+   
+
+
+</script>
